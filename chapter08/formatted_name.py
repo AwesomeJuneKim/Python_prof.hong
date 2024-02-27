@@ -22,4 +22,4 @@ print(musician)
 musician = get_formatted_name('john','hooker','lee')
 print(musician)
 #파이썬은 비어있지 않은 문자열을 true로 간주한다
-#middle_name=''은 미들네임이 있다
+#middle_name=''은 옵션이 된다.
