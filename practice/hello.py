@@ -118,7 +118,7 @@
 # N=input().split()
 # print(N, len(N))
 
-#최대 최소
+#최대 최소-미완
 N=int(input())
 lst=list(map(int, input().split()))
 print(lst)
