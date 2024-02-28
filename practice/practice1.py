@@ -6,10 +6,6 @@
             
 # if __name__=="__main__":
 #     gugudan()
+
+
     
-a=input()
-a=int(a)
-for j in range(1,10):
-    print(f"{a} * {j} = {a*j}")
-    
-print("김")
