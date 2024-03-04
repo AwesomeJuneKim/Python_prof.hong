@@ -22,6 +22,9 @@ class Battery:
         self.battery_size = battery_size
     def describe_battery(self):
         print(f"This car has a {self.battery_size}-kWh battery.")
+    
+    def increment_battery(self, volume):
+        self.battery_size += volume
 
 class ElectricCar(Car):
     """전기차에만 해당하는 특징을 정의합니다."""
@@ -37,4 +40,6 @@ class ElectricCar(Car):
 my_leaf=ElectricCar("Ford", "Mustang", "2019")
 print(my_leaf.get_descriptive_name())
 my_leaf.fill_gas_tank()
+my_leaf.battery_size.describe_battery()
+my_leaf.battery_size.increment_battery(100)
 my_leaf.battery_size.describe_battery()
