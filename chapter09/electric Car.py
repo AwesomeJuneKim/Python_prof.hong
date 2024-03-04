@@ -26,6 +26,12 @@ class Battery:
     def increment_battery(self, volume):
         self.battery_size += volume
 
+    def get_range(self):
+        if self.battery_size<=40:
+            range=150
+        elif self.battery_size>40 and self.battery_size<=60:
+            range=225
+        print(f"This car has a range of {range} miles.")
 class ElectricCar(Car):
     """전기차에만 해당하는 특징을 정의합니다."""
     
@@ -36,10 +42,12 @@ class ElectricCar(Car):
 
     def fill_gas_tank(self):
         print("This car doesn't have a gas tank.")
+    
 
 my_leaf=ElectricCar("Ford", "Mustang", "2019")
 print(my_leaf.get_descriptive_name())
 my_leaf.fill_gas_tank()
 my_leaf.battery_size.describe_battery()
-my_leaf.battery_size.increment_battery(100)
+my_leaf.battery_size.increment_battery(20)
 my_leaf.battery_size.describe_battery()
+my_leaf.battery_size.get_range()
