@@ -3,7 +3,7 @@ class Car:
         self.make = make
         self.model = model
         self.year = year
-        self.odometer=23
+        self.odometer=0
     def get_descriptive_name(self):
         long_name=f"{self.year} {self.make} {self.model}"
         return long_name.title()
@@ -20,6 +20,7 @@ class Car:
 
 my_car=Car("audi","a7","2024")
 print(my_car.get_descriptive_name())
+my_car.read_odometer()
 my_car.update_odometer(22)
 my_car.read_odometer()
 my_car.update_odometer(20)
