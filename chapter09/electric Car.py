@@ -16,6 +16,12 @@ class Car:
             print("You can't roll back an odometer!")
     def increment_odometer(self, miles):
         self.odometer_reading += miles
+#2+배터리 클래스를 하나 더 만들어서 전기차에 연결시킨다.
+class Battery:
+    def __init__(self, battery_size=40):
+        self.battery_size = battery_size
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-kWh battery.")
 
 class ElectricCar(Car):
     """전기차에만 해당하는 특징을 정의합니다."""
@@ -23,15 +29,12 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         """부모 클래스의 속성을 초기화합니다."""
         super().__init__(make, model, year)
-        self.battery_size=40
-    def describe_battery(self):
-        print(f"This car has a {self.battery_size}-kWh battery.")
-    #Car클래스에 fill_gas_tank()메서드가 있다고 치고
+        self.battery_size=Battery()#2+위의 배터리 클래스를 연결시켜 줌
+
     def fill_gas_tank(self):
         print("This car doesn't have a gas tank.")
 
 my_leaf=ElectricCar("Ford", "Mustang", "2019")
 print(my_leaf.get_descriptive_name())
-my_leaf.describe_battery()
-print(f"이차의 배터리는 {my_leaf.battery_size}-kWh 입니다.")
 my_leaf.fill_gas_tank()
+my_leaf.battery_size.describe_battery()
