@@ -34,7 +34,13 @@ class Battery:
             range=150
         elif self.battery_size>40 and self.battery_size<=60:
             range=225
+        else:
+            range=250
         print(f"This car has a range of {range} miles.")
+    def upgrade_battery(self):
+        if self.battery_size<65:
+            self.battery_size=65
+
 class ElectricCar(Car):
     """전기차에만 해당하는 특징을 정의합니다."""
     
@@ -50,6 +56,8 @@ class ElectricCar(Car):
 my_leaf=ElectricCar("Ford", "Mustang", "2019")
 print(my_leaf.get_descriptive_name())
 my_leaf.fill_gas_tank()
+my_leaf.battery_size.describe_battery()
+my_leaf.battery_size.upgrade_battery()#연습문제 9-9 배터리 업그레이드
 my_leaf.battery_size.describe_battery()
 my_leaf.battery_size.increment_battery(20)
 my_leaf.battery_size.describe_battery()
