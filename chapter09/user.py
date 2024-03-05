@@ -9,3 +9,11 @@ class User:
 
 intro=User("john","smith")
 intro.describe_user()
+
+class Admin(User):
+    def __init__(self, first, last):
+        super().__init__(first, last)
+        self.privileges = ['can delete post','can add post','can ban user']
+    def show_privileges(self):
+
+Privileges=['can delete post','can add post','can ban user']
