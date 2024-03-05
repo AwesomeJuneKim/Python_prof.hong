@@ -18,7 +18,8 @@
 #         self.odometer_reading += miles
 # #2+배터리 클래스를 하나 더 만들어서 전기차에 연결시킨다.
 from car import Car
-#이것만 적어도 자동으로 연결되기 때문에 ElectricCar의 슈퍼클래스가 연결되어 에러가 뜨지 않는다.
+#3+ class Car을 모두 주석처리함
+#3+ 이것만 적어도 자동으로 연결되기 때문에 ElectricCar의 슈퍼클래스가 연결되어 에러가 뜨지 않는다.
 class Battery:
     def __init__(self, battery_size=40):
         self.battery_size = battery_size
