@@ -10,9 +10,13 @@ class Person:
     def show_person_vision(self):
         print(f"This person's vision is {self.__vision}")
 
+    def __eq__(self, other): # 4+ 비교 메서드
+        return self.age==other.age
+
 new_person=Person("Kim","20","Kim's house")
 print("This person's name is",new_person.name, "and he is ",new_person.age, " years old.")
 print(f"This person weighs {new_person.weight} kg")
+other_person=Person("Lee","18","Lee's house")# 4+ 다른사람 정보 추가
 
 new_person.show_person_vision()
 
@@ -22,5 +26,14 @@ print(new_person.__str__())
 print(new_person)
 #->__str__은 자동호출 되기 때문에 메서드를 호출할 필요가 없어서 코드가 간단해 진다.
 
-my_list=[1,2,3,4]
-print(my_list)
+print(new_person==other_person)#4+ 두사람의 나이가 같은지 비교하고 true false로 결과를 출력한다.
+
+class List:
+    def __init__(self,mylist):
+        self.mylist=mylist
+        
+    def __len__(self):
+        return len(self.mylist)
+my_list= [1,2,3,4]
+print(len(my_list))
+
