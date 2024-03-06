@@ -119,7 +119,8 @@
 # print(N, len(N))
 
 #최대 최소-미완
-N=int(input())
-lst=list(map(int, input().split()))
-print(lst)
-print(max(lst), min(lst))
+# N=int(input())
+# lst=list(map(int, input().split()))
+# print(lst)
+# print(max(lst), min(lst))
+

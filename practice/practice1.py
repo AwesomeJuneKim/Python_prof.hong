@@ -16,11 +16,14 @@
 #         print("0")
         
 
-#백준예제-미완10950
-T=int(input())
-a=int(input())
-b=int(input())
-for i in range(T):
-    print(a+b)
+#백준예제-미완10950-완료
+# T=int(input())
+# for i in range(T):
+#     a,b=map(int, input().split())
+#     print(a+b)
 
+#백준예제 1000미완
+A=input()
+B=input()
+print(int(A)+int(B))
 
