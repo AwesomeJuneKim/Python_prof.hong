@@ -40,6 +40,12 @@
 #     print(4)
 
 # 백준예제 25314
-N=int(input())
 # 입력값을 4로 나눈 몫의 갯수만큼 long을 적어준다
+N=int(input())
+string=""
+if(4<=N<=1000 and N%4==0):
+    for i in range(1,int(N/4)+1):
+        string +="long "
+    string +="int"
+    print(string)
 
