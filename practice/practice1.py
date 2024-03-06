@@ -23,7 +23,23 @@
 #     print(a+b)
 
 #백준예제 1000미완
-A=input()
-B=input()
-print(int(A)+int(B))
+# A=input()
+# B=input()
+# print(int(A)+int(B))
+
+#백준예제 14681
+# x=int(input())
+# y=int(input())
+# if x > 0 and y > 0:
+#     print(1)
+# elif x < 0 and y > 0:
+#     print(2)
+# elif x < 0 and y < 0:
+#     print(3)
+# else:
+#     print(4)
+
+# 백준예제 25314
+N=int(input())
+# 입력값을 4로 나눈 몫의 갯수만큼 long을 적어준다
 

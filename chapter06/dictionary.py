@@ -47,3 +47,11 @@ for row in f.items():
     print(first(row), second(row))
 g=sorted(f.items(), key=second)
 print(g)
+
+for x in range(5):
+    for y in range(10):
+        print(x,y)
+if x<5:
+    print('low')
+else:
+    print('high')
