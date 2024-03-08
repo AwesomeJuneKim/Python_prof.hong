@@ -41,11 +41,46 @@
 
 # 백준예제 25314
 # 입력값을 4로 나눈 몫의 갯수만큼 long을 적어준다
-N=int(input())
-string=""
-if(4<=N<=1000 and N%4==0):
-    for i in range(1,int(N/4)+1):
-        string +="long "
-    string +="int"
-    print(string)
+# N=int(input())
+# string=""
+# if(4<=N<=1000 and N%4==0):
+#     for i in range(1,int(N/4)+1):
+#         string +="long "
+#     string +="int"
+#     print(string)
 
+#백준 11021
+# T=int(input())
+# for i in range(1,T+1):
+#     a,b=map(int, input().split())
+#     print(f'Case #{i}: {a+b}')
+
+#백준 10951 입력이 끝날때 까지 덧셈을 계속하는 코드
+#나는 try except를 사용하지 않아서 에러 났음
+# while True:
+#     try:
+#         a,b=map(int, input().split())
+#         print(a+b)
+#     except:
+#         break
+
+#백준 10807-미완
+# N개 만큼의 정수를 입력한다??
+# N개의 정수가 생성되고 리스트에 넣는다. 그 리스트 안에 해당정수가 몇개 있는지 확인한다.
+# N=int(input())
+# if(1<=N<=100):
+#     NList=list(map(int, input().split()))
+# print(NList.count(N))
+
+data=[]
+for _ in range(10):
+    data.append(int(input()%42))
+print(data)
+
+# print(set([1,1,1]))
+
+# answer=[]
+# for d  in answer:
+#     if d not in answer:
+#         answer.append(d)
+# print(len(answer))

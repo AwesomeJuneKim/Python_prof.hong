@@ -124,3 +124,12 @@
 # print(lst)
 # print(max(lst), min(lst))
 
+#백준 연습
+a=int(input())
+str=""
+if(4<=a<=1000 and a%4==0):
+    for i in range(1,int(a/4)+1):
+        str +="long "
+    str +="int"
+    print(str)
+
