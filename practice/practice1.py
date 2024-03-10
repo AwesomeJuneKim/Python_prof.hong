@@ -68,14 +68,13 @@
 # N개 만큼의 정수를 입력한다??
 # N개의 정수가 생성되고 리스트에 넣는다. 그 리스트 안에 해당정수가 몇개 있는지 확인한다.
 # N=int(input())
-# if(1<=N<=100):
-#     NList=list(map(int, input().split()))
+# NList=map(int, input().split())
 # print(NList.count(N))
 
-data=[]
-for _ in range(10):
-    data.append(int(input()%42))
-print(data)
+# data=[]
+# for _ in range(10):
+#     data.append(int(input()%42))
+# print(data)
 
 # print(set([1,1,1]))
 
@@ -84,3 +83,21 @@ print(data)
 #     if d not in answer:
 #         answer.append(d)
 # print(len(answer))
+
+#백준 10871
+# A=list(int(map(int, input().split())))
+
+#백준 27866
+S=input()
+i=int(input())
+print(S[i-1])
+
+#백준 9086
+T=int(input())
+for i in range(T):
+    a=input()
+    print(a[0]+a[-1])
+
+#백준 11654
+a=input()
+print(ord(a))
