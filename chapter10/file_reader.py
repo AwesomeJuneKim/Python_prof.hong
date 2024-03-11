@@ -62,11 +62,11 @@ import json
 # numbers=[2,3,5,7,11,13]
 # path=Path('number.json')
 # contents=json.dumps(numbers)
-    #dumps함수는 리스트를 json문자열로 변환 함
+#     dumps함수는 리스트를 json문자열로 변환 함
 # path.write_text(contents)
 
 #저장한 JSON파일을 읽어오기
 path=Path('number.json')
-contents=path.read_text()
+contents=path.read_text()#contents가 이미 텍스트로 읽혔으므로 load를 이용해 파이썬 객체로 만들어야 함
 numbers=json.loads(contents)
 print(numbers)

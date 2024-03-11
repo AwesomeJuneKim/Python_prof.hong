@@ -88,16 +88,33 @@
 # A=list(int(map(int, input().split())))
 
 #백준 27866
-S=input()
-i=int(input())
-print(S[i-1])
+# S=input()
+# i=int(input())
+# print(S[i-1])
 
-#백준 9086
-T=int(input())
-for i in range(T):
-    a=input()
-    print(a[0]+a[-1])
+# #백준 9086
+# T=int(input())
+# for i in range(T):
+#     a=input()
+#     print(a[0]+a[-1])
 
-#백준 11654
-a=input()
-print(ord(a))
+# #백준 11654
+# a=input()
+# print(ord(a))
+
+# #백준 10871
+# X=int(input())
+# N=int(input())
+# A=list(map(int, input().split))#N보다 작은수로 이루어진 수열
+# for i in range(N):
+#     if A[i]<=X:
+#         print(A[i]+" ")
+        
+import sys
+# N=int(input())
+
+# for i in range(N):
+#     print(i)
+
+data=[int(d.rstrip())for d in sys.stdin.readlines()]
+print(sorted(data))
