@@ -125,11 +125,27 @@
 # print(max(lst), min(lst))
 
 #백준 연습
-a=int(input())
-str=""
-if(4<=a<=1000 and a%4==0):
-    for i in range(1,int(a/4)+1):
-        str +="long "
-    str +="int"
-    print(str)
+# a=int(input())
+# str=""
+# if(4<=a<=1000 and a%4==0):
+#     for i in range(1,int(a/4)+1):
+#         str +="long "
+#     str +="int"
+#     print(str)
 
+#백준 10818
+# N=int(input())
+# v=list(map(int, input().split()))
+# print(min(v), max(v))
+
+#백준 2562
+# nbr=[int(input()) for _ in range(3)]
+# print(max(nbr))
+# print(nbr.index(max(nbr))+1)
+
+#백준5597-미완
+student= [i for i in range(1,31)]
+stn=[int(input()) for _ in range(28)]
+student.remove(stn)
+print(min(student))
+print(max(student))

@@ -15,7 +15,7 @@
 #     reader=csv.reader(file)
 #     for line in reader:
 #         print(line)
-        
+
 # lst=[1,2,3,3,4,4,5,5,5]
 #next함수는 반복가능한 객체에 적용가능하다 리스트도 반복가능하지만 next함수에 적용할 수 없는 예외 이므로
 #반복가능한 객체에 적용할 수 있게 iter함수로 변환 후 사용가능하다.
