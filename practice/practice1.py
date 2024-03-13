@@ -116,5 +116,7 @@ import sys
 # for i in range(N):
 #     print(i)
 
+#백준의 어떤문제인지 모름
 data=[int(d.rstrip())for d in sys.stdin.readlines()]
 print(sorted(data))
+

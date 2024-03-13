@@ -149,3 +149,29 @@ stn=[int(input()) for _ in range(28)]
 student.remove(stn)
 print(min(student))
 print(max(student))
+
+# #백준 2675
+#     #내가 만든 오답
+# data=list(map(int,input().split()))
+# for _ in range(int(input())):
+#     print()
+# print(data)
+#     #정답   
+# nb=int(input())
+# for _ in range(nb):
+#     cnt, str= input().split()
+#     for i in str:
+#         print(i*int(cnt), end='')
+#     print()
+
+#백준 1152
+#스페이스의 수+1=단어수
+data=input()
+space=0
+for i in data.strip().split(' '):
+    if i:
+        space +=1
+print(space)
+
+data=list(map(str,input().split))
+print(len(data))
