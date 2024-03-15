@@ -144,11 +144,12 @@
 # print(nbr.index(max(nbr))+1)
 
 #백준5597-미완
-student= [i for i in range(1,31)]
-stn=[int(input()) for _ in range(28)]
-student.remove(stn)
-print(min(student))
-print(max(student))
+# student= [i for i in range(1,31)]
+# for _ in range(28):
+#     stn=int(input())
+#     student.remove(stn)
+# print(min(student))
+# print(max(student))
 
 # #백준 2675
 #     #내가 만든 오답
@@ -175,3 +176,8 @@ print(space)
 
 data=list(map(str,input().split))
 print(len(data))
+
+#백준 3052
+for i in range(10):
+    int(input())
+
